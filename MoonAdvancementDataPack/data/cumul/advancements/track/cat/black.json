@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "tamed": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "cat",
+                "variant": "minecraft:black"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cumul:track/cat/black"
+  }
+}

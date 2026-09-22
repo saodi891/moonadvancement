@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "in": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:jagged_peaks"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cumul:track/biome/jagged_peaks"
+  }
+}
